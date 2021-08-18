@@ -1,5 +1,5 @@
 from urlextract import URLExtract
-#from wordcloud import WordCloud
+from wordcloud import WordCloud
 import pandas as pd
 from collections import Counter
 import emoji
@@ -53,10 +53,10 @@ def create_wordcloud(selected_user,df):
                 y.append(word)
         return " ".join(y)
 
-    #wc = WordCloud(width=500,height=500,min_font_size=10,background_color='white')
-    #temp['message'] = temp['message'].apply(remove_stop_words)
-    #df_wc = wc.generate(temp['message'].str.cat(sep=" "))
-    #return df_wc
+    wc = WordCloud(width=500,height=500,min_font_size=10,background_color='white')
+    temp['message'] = temp['message'].apply(remove_stop_words)
+    df_wc = wc.generate(temp['message'].str.cat(sep=" "))
+    return df_wc
 
 def most_common_words(selected_user,df):
 
