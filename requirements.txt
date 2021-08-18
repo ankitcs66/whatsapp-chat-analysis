@@ -1,7 +1,7 @@
-streamlit
+streamlit - to coherent the whole project as one, to process the data
 matplotlib
-seaborn
-urlextract
-wordcloud
-pandas
-emoji
+seaborn - to plot the heat map 
+urlextract - to extract the links from the messages
+wordcloud - to plot the most used words in a creative graph
+pandas - to work on the messages exported and to use it for ploting etc
+emoji - to analyse the emojies udes
